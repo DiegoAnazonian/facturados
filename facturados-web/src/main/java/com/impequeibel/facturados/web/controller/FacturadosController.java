@@ -1,5 +1,6 @@
 package com.impequeibel.facturados.web.controller;
 
+import com.impequeibel.facturados.model.LoadDriver;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,6 +20,10 @@ public class FacturadosController {
     @RequestMapping(value = "/facturados/", method = {RequestMethod.GET, RequestMethod.HEAD})
     public ModelAndView home(){
         ModelAndView mav = new ModelAndView("facturados/facturados-home");
+
+        LoadDriver loadDriver = new LoadDriver();
+
+        loadDriver.getConnection();
 
         return mav;
     }
