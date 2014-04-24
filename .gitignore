@@ -1,12 +1,44 @@
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+.gitignore
+.project
+.settings/
+FrontendBuilder/FrameworkBuilder.css.log.xml
+FrontendBuilder/FrameworkBuilder.js.log.xml
+facturados-domain/.classpath
+facturados-domain/.project
+facturados-domain/.settings/
+facturados-domain/.idea
+facturados-domain/target/
+facturados-domain/test-output/
+facturados-web/.classpath
+facturados-web/bin
+facturados-web/.project
+facturados-web/.settings/
+facturados-web/src/main/conf/env/IC/
+facturados-web/src/main/conf/env/RC/
+facturados-web/src/main/conf/env/despdevcro/
+facturados-web/src/main/conf/env/despdevhoteles/
+facturados-web/src/main/webapp/WEB-INF/css-versioned/
+facturados-web/src/main/webapp/WEB-INF/js-versioned/
+facturados-web/src/main/webapp/WEB-INF/.sass-cache/
+facturados-web/src/main/resources/log4j.properties
+facturados-web/target
+facturados-web/.idea
+facturados/facturados.iml
+tourism-static-content/tourism-static-content.iml
+facturados-domain/facturados-domain.iml
+facturados-web/facturados-web.iml
+facturados.iml
+.idea
+FrontendBuilder/FrameworkBuilder.img.log.xml
+deployVersionedStaticContent.sh
+facturados-web/facturados-web (2).iml
+facturados-domain.iml
+tourism-static-content.iml
+facturados-web.iml
+tourism-static-content/target/
+*.css
+.css
+facturados-web/src/main/webapp/WEB-INF/css/
+facturados-web/src/main/resources/log4j.properties
+node_modules
+out/

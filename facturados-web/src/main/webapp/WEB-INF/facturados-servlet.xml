@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.0.xsd
+http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+<!-- 	<mvc:annotation-driven /> -->
+
+	<!--<mvc:resources location="WEB-INF/css/" mapping="/css/**"
+		cache-period="${staticContent.css.cache.ttl:0}" />
+	<mvc:resources location="WEB-INF/js/" mapping="/js/**"
+		cache-period="${staticContent.js.cache.ttl:0}" />
+	<mvc:resources location="WEB-INF/css-versioned/" mapping="/css-versioned/**"
+		cache-period="${staticContent.css.cache.ttl:0}" />
+	<mvc:resources location="WEB-INF/js-versioned/" mapping="/js-versioned/**"
+		cache-period="${staticContent.js.cache.ttl:0}" />
+	<mvc:resources location="WEB-INF/fonts/" mapping="/fonts/**"
+		cache-period="${staticContent.fonts.cache.ttl:0}" />
+	<mvc:resources location="WEB-INF/fonts-versioned/" mapping="/fonts-versioned/**"
+		cache-period="${staticContent.fonts.cache.ttl:0}" />
+	<mvc:resources location="WEB-INF/images/" mapping="/images/**"
+		cache-period="${staticContent.images.cache.ttl:0}" />
+    <mvc:resources location="WEB-INF/images/" mapping="/img/**"
+                   cache-period="${staticContent.images.cache.ttl:0}" />
+    <mvc:resources location="WEB-INF/img-versioned/" mapping="/img-versioned/**"
+                   cache-period="${staticContent.images.cache.ttl:0}" />-->
+
+	<import resource="classpath:application-context.xml" />
+
+</beans>
