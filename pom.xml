@@ -116,7 +116,47 @@
                 <version>${spring.version}</version>
             </dependency>
 
-
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.8.1</version>
+                <configuration>
+                    <connectionType>developerConnection</connectionType>
+                </configuration>
+            </plugin>
+            <!-- Release PlugIn -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.0</version>
+                <configuration>
+                    <preparationGoals>clean install</preparationGoals>
+                    <goals>clean deploy</goals>
+                    <updateBranchVersions>true</updateBranchVersions>
+                    <updateWorkingCopyVersions>true</updateWorkingCopyVersions>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <inherited>true</inherited>
+                <configuration>
+                    <instrumentation>
+                        <excludes>
+                            <exclude>com/impequeibel/facturados/web/**/*.class</exclude>
+                            <exclude>com/impequeibel/facturados/**/model/*.class</exclude>
+                        </excludes>
+                    </instrumentation>
+                    <check />
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
